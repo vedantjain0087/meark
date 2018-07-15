@@ -1,0 +1,19 @@
+<div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+                <div class="row page-titles">
+                    <div class="col-md 12">
+                        <h1>DASHBOARD</h1>
+                    </div>
+        </div>
+        <div class="col-md-12">
+                <input id="file" type="file" name="img"file-model="myFile1"onchange="angular.element(this).scope().upload(this.files)" multiple>
+                <button type="button" ng-click="add()">Upload</button>
+
+        </div>
+        <div class="col-md-12">
+                <img ng-src="{{image_source}}">
+        </div>
+</div>
