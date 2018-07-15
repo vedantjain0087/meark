@@ -54,13 +54,13 @@ myApp.config(function ($routeProvider) {
 
 myApp.controller('homeController', ['$scope', '$location', function($scope,$location){
 
- $scope.baseURL = "ec2-18-222-199-100.us-east-2.compute.amazonaws.com:4000/";
+ $scope.baseURL = "http://ec2-18-222-199-100.us-east-2.compute.amazonaws.com:4000/";
 
 }]);    
 myApp.controller('dashController', ['$scope', '$location','fileUpload','$http', function($scope,$location,fileUpload,$http){
 
- $scope.baseURL = "ec2-18-222-199-100.us-east-2.compute.amazonaws.com:4000/";
-    $scope.URL = "ec2-18-222-199-100.us-east-2.compute.amazonaws.com:4000/";
+ $scope.baseURL = "http://ec2-18-222-199-100.us-east-2.compute.amazonaws.com:4000/";
+    $scope.URL = "http://ec2-18-222-199-100.us-east-2.compute.amazonaws.com:4000/";
     $scope.images = []
     myFile1 = [];
     var file_upload = [];
